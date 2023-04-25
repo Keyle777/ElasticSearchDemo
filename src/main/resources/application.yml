@@ -1,0 +1,37 @@
+server:
+  port: 17813
+  servlet:
+    context-path: /
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  application:
+    name: elastic-search-demo
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.example.elasticsearchdemo.controller
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+    enable-swagger-models: true
+    enable-document-manage: true
+    enable-version: false
+    swagger-model-name: 实体类列表
+    enable-open-api: true
+
+  documents:
+    - name: MD文档
+      locations: classpath:markdown/*
+      group: default
+
