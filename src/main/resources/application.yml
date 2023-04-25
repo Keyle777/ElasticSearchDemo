@@ -35,3 +35,10 @@ knife4j:
       locations: classpath:markdown/*
       group: default
 
+elasticsearch:
+  hostname: 172.25.94.144
+  port: 29200
+  username: elastic
+  password: Ld4hiiLL1miTrzMVlaaC
+  # 关键字左侧菜单查询
+  indices-name: archive_library
