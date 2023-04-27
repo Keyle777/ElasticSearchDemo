@@ -85,7 +85,7 @@ public class RespBean extends HashMap<String, Object> {
      * @return 成功消息
      */
     public static RespBean success() {
-        return RespBean.success("操作成功");
+        return RespBean.success("成功");
     }
 
 

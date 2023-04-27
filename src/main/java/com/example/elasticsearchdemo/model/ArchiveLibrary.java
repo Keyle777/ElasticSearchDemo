@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+import java.util.Map;
 
 @Data
 @AllArgsConstructor
@@ -42,5 +43,7 @@ public class ArchiveLibrary {
     private Integer year;
     @Schema(description = "责任人")
     private String zrz;
+    @Schema(description = "高亮信息")
+    private Map<String, List<String>> highLight;
 
 }
